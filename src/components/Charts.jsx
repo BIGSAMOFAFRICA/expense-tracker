@@ -30,9 +30,11 @@ const Charts = ({ transactions }) => {
   };
 
   return (
-    <div className="mt-4">
-      <h3>Income vs Expenses</h3>
-      <Bar data={data} />
+    <div className="card mt-4">
+      <div className="card-body">
+        <h3 className="card-title text-center mb-3">Income vs Expenses</h3>
+        <Bar data={data} />
+      </div>
     </div>
   );
 };

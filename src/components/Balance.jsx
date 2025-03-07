@@ -12,10 +12,12 @@ const Balance = ({ transactions }) => {
   const balance = totalIncome - totalExpenses;
 
   return (
-    <div className="mb-4">
-      <h3>Balance: ${balance}</h3>
-      <p>Total Income: ${totalIncome}</p>
-      <p>Total Expenses: ${totalExpenses}</p>
+    <div className="card mb-4">
+      <div className="card-body">
+        <h3 className="card-title text-center mb-3">Balance: ${balance}</h3>
+        <p className="text-muted text-center">Total Income: ${totalIncome}</p>
+        <p className="text-muted text-center">Total Expenses: ${totalExpenses}</p>
+      </div>
     </div>
   );
 };
